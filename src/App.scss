@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  padding: 0px 40px;
+  padding-top: 40px;
+  background-color: #282c34;
+  min-height: 100vh;
+  .title {
+    color: white;
+  }
+}
+
+#cursor {
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: none;
+}
