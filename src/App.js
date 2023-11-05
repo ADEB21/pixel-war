@@ -8,13 +8,13 @@ import { getDatabase, ref, set, child, get } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDHFb2bIg_8NeW7OO8glBX56Q30fzM2kj0",
-  authDomain: "pixel-w.firebaseapp.com",
-  projectId: "pixel-w",
-  storageBucket: "pixel-w.appspot.com",
-  messagingSenderId: "340006363641",
-  appId: "1:340006363641:web:e696d2b7cc32040d6a1d28",
-  databaseURL: "https://pixel-w-default-rtdb.firebaseio.com/",
+  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_FIREBASE_APPID,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASEURL,
 };
 
 // Initialize Firebase
